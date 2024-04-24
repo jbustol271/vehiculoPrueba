@@ -3,7 +3,7 @@ package vehiculo;
 
 /**
  *
- * @author 
+ * @author Javier Bustamante
  */
 public class Vehiculo2324 {
 
@@ -68,13 +68,22 @@ public class Vehiculo2324 {
     protected double precioIVA;
     protected int stock;
 
-    /* Constructor sin argumentos */
+    /**
+     * Constructor sin argumentos
+     */
+    
     public Vehiculo2324 ()
     {
     }
     // Constructor con parámetro para iniciar todas las propiedades de la clase
     
     
+    /**
+     * 
+     * @param nom
+     * @param precio
+     * @param stock 
+     */
     public Vehiculo2324 (String nom, double precio, int stock)
     {
         this.nombre =nom;
@@ -82,24 +91,42 @@ public class Vehiculo2324 {
         this.stock=stock;
     }
    // Método para asignar el nombre del vehiculo
+    /**
+     * 
+     * @param nom 
+     */
     public void asignarNombre(String nom)
     {
         setNombre(nom);
     }
     // Método que me devuelve el nombre del vehiculo
+    /**
+     * 
+     * @return 
+     */ 
+   
     public String obtenerNombre()
     {
         return getNombre();
     }
 
     // Método que me devuelve el stock de vehiculos disponible en cada momento
-     public int obtenerStock ()
+    /**
+     * 
+     * @return 
+     */
+    public int obtenerStock ()
     {
         return getStock();
     }
 
     /* Método para comprar vehiculos. Modifica el stock.
      * Este método va a ser probado con Junit
+     */
+    /**
+     * 
+     * @param cantidad
+     * @throws Exception 
      */
     public void comprar(int cantidad) throws Exception
     {
@@ -108,6 +135,11 @@ public class Vehiculo2324 {
         setStock(getStock() + cantidad);
     }
 
+    /**
+     * 
+     * @param cantidad
+     * @throws Exception 
+     */
     public void vender (int cantidad) throws Exception
     {
         if (cantidad <= 0)
