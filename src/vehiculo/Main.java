@@ -3,10 +3,13 @@ package vehiculo;
 
 /**
  *
- * @author 
+ * @author Javier Bustamante
  */
 public class Main {
-    
+    /**
+     * 
+     * @param args 
+     */
       public static void main(String[] args) {
         Vehiculo2324 miVehiculo2324;
         int stockActual;
@@ -16,7 +19,11 @@ public class Main {
         stockActual = miVehiculo2324.obtenerStock();
         System.out.println("El stock actual es "+ stockActual );
     }
-
+/**
+ * 
+ * @param miVehiculo2324
+ * @param cantidad 
+ */
     public static void oprativaVehiculo2324(Vehiculo2324 miVehiculo2324, Integer cantidad) {
         try
         {
